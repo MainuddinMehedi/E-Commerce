@@ -106,7 +106,7 @@ function createCard(eachCard) {
                             </div>
                             <h4>$${eachCard.price}</h4>
                         </div>
-                        <a href="#"><i class="fal fa-shopping-cart"></i></a>
+                        <a href="#" class="cart"><i class="fal fa-shopping-cart"></i></a>
                     </div>`;
     return proContainer.innerHTML += card;
 }
