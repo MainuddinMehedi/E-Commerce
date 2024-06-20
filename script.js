@@ -2,6 +2,7 @@ import {
     allProductsData
 } from "./data.js";
 
+
 // Hambarger Menu | Toggle Nav Menu
 const bar = document.getElementById('bar');
 const nav = document.getElementById('navbar');
@@ -23,6 +24,7 @@ if (close) {
 
 // Set data | in each product container of different pages
 const proCardsContainer = document.querySelectorAll(".pro-container")
+// console.log(proCardsContainer)
 
 proCardsContainer.forEach(eachContainer => {
     // allProductsData data is imported on the top
@@ -55,12 +57,9 @@ proCardsContainer.forEach(eachContainer => {
 // End
 
 
+// Each product details when it is clicked
 const productCards = document.querySelectorAll(".pro")
 
 productCards.forEach((item, index) => item.addEventListener("click", () => {
     window.location.href = `/sproduct.html?productId=${index}`
 }))
-
-// productCards.addEventListener("click", () => {
-//     console.log("clicked")
-// })
